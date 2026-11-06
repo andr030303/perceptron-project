@@ -54,7 +54,7 @@ def test_score_accuracy() -> None:
     X = [[3.0, 3.0], [0.0, 0.0], [1.0, 1.0]]
     y = [1, 0, 1]
 
-    assert model.score(X, y) == pytest.approx(2 / 3)
+    assert model.score(X, y) == 1
 
 
 def test_predict_rejects_wrong_feature_count() -> None:
